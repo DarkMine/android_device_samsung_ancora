@@ -44,6 +44,9 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := false
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
+# crDroid changelog on ariesve
+CRDROID_CHANGELOG := true
+
 # Use dlmalloc instead of jemalloc for mallocs on low-ram targets
 MALLOC_IMPL := dlmalloc
 
@@ -62,8 +65,8 @@ BOARD_USES_LEGACY_MMAP := true
 # Kernel
 BOARD_KERNEL_BASE := 0x00400000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30-common
-TARGET_KERNEL_CONFIG := ancora_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30
+TARGET_KERNEL_CONFIG := crdroid_ancora_defconfig
 
 # Wifi related defines
 BOARD_NO_WIFI_HAL                := true
